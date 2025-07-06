@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+#game-container {
+    display: flex;
+    height: 100vh;
+}
+
+#ui-panel {
+    width: 250px;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-right: 2px solid #444;
+    box-sizing: border-box;
+}
+
+#ui-panel h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+#score, #lives, #gold {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.tower-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tower-btn:hover {
+    background-color: #5a5a5a;
+}
+
+.tower-btn:active {
+    background-color: #3a3a3a;
+}
+
+.tower-btn.selected {
+    background-color: #ffd700;
+    color: #1a1a1a;
+}
+
+#start-wave-btn {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#start-wave-btn:hover {
+    background-color: #218838;
+}
+
+#start-wave-btn:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+#wave-number {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#game-canvas {
+    background-color: #2d5a2d;
+    border: 2px solid #444;
+    cursor: crosshair;
+}
+
+#game-canvas.placing-tower {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="white" stroke-width="2"/><path d="M12 8v8M8 12h8" stroke="white" stroke-width="2"/></svg>'), auto;
+}
